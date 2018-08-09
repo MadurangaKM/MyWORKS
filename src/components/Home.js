@@ -5,7 +5,7 @@ import Statusbar from '../components/Statusbar';
 import Header from '../components/Header';
 import Login from '../components/Login';
 import Loading from '../components/Loading';
-
+import Card from '../components/Card';
 
 export default class Home extends Component {
   state = { loginIn: null };
@@ -34,6 +34,7 @@ renderContent() {
       return (
         <View style={{ flex: 1, backgroundColor: '#FFFFFF' }}>
          <Header headerText={'MyWORKS'} />
+         <Card style={{ flex: 1 }} />
         </View>
         
        );
